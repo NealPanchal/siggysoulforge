@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siggy | The Multidimensional Cat of Ritual.net</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Translucent.png">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Simple Lucide Icons script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="ambient-background">
+        <div class="blob purple-blob"></div>
+        <div class="blob amber-blob"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="Translucent.svg" alt="Siggy Logo" class="brand-logo">
+            <span>Siggy Soul Forge</span>
+        </div>
+        <div class="nav-links">
+            <a href="#glimpse">Features</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1479884591870246913&permissions=824633969664&integration_type=0&scope=bot"
+                target="_blank" class="btn-primary">Add to Server</a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <!-- GLIMPSE SECTION -->
+        <section id="glimpse" class="hero-section">
+            <div class="hero-content">
+                <div class="badge">Ritual.net Multiverse Entity</div>
+                <h1 class="hero-title">Meet <span class="text-gradient">Siggy</span></h1>
+                <p class="hero-subtitle">
+                    The multidimensional, slightly unhinged cosmic cat living inside the Ritual Soul Forge.
+                    Ask about blockchains, AI, or just watch her defy gravity.
+                </p>
+                <div class="hero-actions">
+                    <a href="#trial" class="btn-primary glow-effect">
+                        <i data-lucide="sparkles"></i> Awaken the Forge
+                    </a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1479884591870246913&permissions=824633969664&integration_type=0&scope=bot"
+                        target="_blank" class="btn-primary glow-effect btn-secondary">
+                        <i data-lucide="plus"></i> Add to Server
+                    </a>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-panel">
+                    <div class="feature-icon"><i data-lucide="message-square-dashed"></i></div>
+                    <h3>Chaotic Responses</h3>
+                    <p>Powered by custom prompt engineering with GPT-4 / Gemini for witty, internet-slang chaotic
+                        wisdom.</p>
+                </div>
+                <div class="feature-card glass-panel">
+                    <div class="feature-icon"><i data-lucide="flame"></i></div>
+                    <h3>Soul Forging</h3>
+                    <p>Offer items to the Soul Forge and receive a mystical judgment from the multiverse itself.</p>
+                </div>
+                <div class="feature-card glass-panel">
+                    <div class="feature-icon"><i data-lucide="scroll"></i></div>
+                    <h3>Prophecies</h3>
+                    <p>Receive unnerving, strangely specific fortunes about the future of web3 and artificial
+                        intelligence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRIAL SECTION -->
+        <section id="trial" class="trial-section">
+            <div class="section-header">
+                <h2 class="section-title">Test the <span class="text-gradient">Timeline</span></h2>
+                <p>Interact with a slice of Siggy's intelligence straight from your browser.</p>
+            </div>
+
+            <div class="chat-container glass-panel">
+                <div class="chat-header">
+                    <div class="bot-info">
+                        <div class="bot-avatar" style="overflow: hidden; padding: 0;">
+                            <img src="unnamed.jpg" alt="Siggy Avatar"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="bot-details">
+                            <span class="bot-name">Siggy <span class="bot-tag">BOT</span></span>
+                            <span class="bot-status">Looking at multiple dimensions...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-window" id="chat-window">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            *floats upside down* gravity is literally just a suggestion. what does the mortal desire?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <form id="chat-form" class="chat-form">
+                        <input type="text" id="chat-input" placeholder="Message Siggy..." autocomplete="off" required>
+                        <button type="submit" class="btn-send" id="btn-send">
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>A Ritual.net Soul Forge Quest Entry. 🔮 No real cats were harmed in the making of these blockchains.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
