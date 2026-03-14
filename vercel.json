@@ -2,28 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/**/*",
-      "use": "@vercel/static"
+      "src": "api/chat.js",
+      "use": "@vercel/node"
     },
     {
-      "src": "api/bot.js",
-      "use": "@vercel/node"
+      "src": "public/**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/bot",
-      "dest": "/api/bot.js"
+      "src": "/api/chat",
+      "dest": "/api/chat.js"
     },
     {
       "src": "/(.*)",
       "dest": "/public/$1"
     }
-  ],
-  "outputDirectory": "public",
-  "functions": {
-    "api/bot.js": {
-      "maxDuration": 10
-    }
-  }
+  ]
 }
